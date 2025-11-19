@@ -102,6 +102,9 @@ mini-ai-interview-screener/
 ```
 
 🎥 Loom Walkthrough
+https://www.loom.com/share/7f3f3ddfa2714d65b34713b6cc13d13
+
+
 
 A short walkthrough video explaining:
 Code structure
