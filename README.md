@@ -4,8 +4,8 @@ A lightweight FastAPI backend that evaluates candidate interview answers using a
 Designed to be clean, fast, and easy to understand — perfect for real-world screening workflows.
 
 ⚡ Features
-🧠 1. /evaluate-answer
 
+🧠 1. /evaluate-answer
 Takes a single candidate answer and returns:
 
 A score from 1 to 5
@@ -16,7 +16,6 @@ One improvement suggestion
 
 
 📊 2. /rank-candidates
-
 Takes an array of answers and:
 
 Evaluates each one using the same LLM logic
@@ -27,7 +26,6 @@ Returns a clean JSON list
 
 
 ✨ Additional
-
 Predictable, structured JSON responses
 
 Safe JSON parsing to avoid model formatting issues
