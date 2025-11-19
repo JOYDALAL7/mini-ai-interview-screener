@@ -14,6 +14,7 @@ A short one-line summary
 
 One improvement suggestion
 
+
 📊 2. /rank-candidates
 
 Takes an array of answers and:
@@ -23,6 +24,7 @@ Evaluates each one using the same LLM logic
 Sorts candidates from highest → lowest score
 
 Returns a clean JSON list
+
 
 ✨ Additional
 
@@ -35,39 +37,18 @@ Minimal + readable architecture
 Automatically documented via Swagger UI (/docs)
 
 🛠️ Tech Stack & Why I Chose It
+
 FastAPI
-
-I picked FastAPI because it is:
-
-Extremely lightweight
-
-Fast and async-friendly
-
-Automatically generates live API docs
-
+I picked FastAPI because it is:Extremely lightweight,Fast and async-friendly,Automatically generates live API docs
 Perfect for small real-world backend services
 
-OpenAI (gpt-4o-mini)
-
-Used as the evaluation engine because:
-
-It handles structured JSON instructions reliably
-
-Low latency for quick scoring
-
-Simple integration using the Python SDK
+OpenAI (gpt-4o-mini) 
+Used as the evaluation engine because:It handles structured JSON instructions reliably,Low latency for quick scoring,Simple integration using the Python SDK
 
 Architecture Philosophy
-
-The app is intentionally simple:
-
-Entire logic in a single file for easy review
-
-One evaluation function reused across endpoints
-
-Minimal dependencies and clear flow
-
+The app is intentionally simple:Entire logic in a single file for easy review,One evaluation function reused across endpoints,Minimal dependencies and clear flow
 Product-engineering mindset: no over-engineering
+
 📦 Setup Instructions
 Clone the repository:
 ```bash
