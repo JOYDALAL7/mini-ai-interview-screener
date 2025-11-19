@@ -1,4 +1,3 @@
-<img width="297" height="81" alt="image" src="https://github.com/user-attachments/assets/a65cb24a-88ed-4a12-bc62-90b65fb9e853" />🚀 Mini AI Interview Screener (Backend Only)
 
 A lightweight FastAPI backend that evaluates candidate interview answers using an LLM and ranks multiple responses based on score.
 Designed to be clean, fast, and easy to understand — perfect for real-world screening workflows.
