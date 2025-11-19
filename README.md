@@ -1,54 +1,65 @@
-🚀 Mini AI Interview Screener (Backend Only)
+# 🚀 Mini AI Interview Screener (Backend Only)
 
-A lightweight FastAPI backend that evaluates candidate interview answers using an LLM and ranks multiple responses based on score.
+A lightweight FastAPI backend that evaluates candidate interview answers using an LLM and ranks multiple responses based on score.  
 Designed to be clean, fast, and easy to understand — perfect for real-world screening workflows.
 
-⚡ Features
+---
 
-🧠 1. /evaluate-answer
+## ⚡ Features
+
+### 🧠 1. `/evaluate-answer`
 Takes a single candidate answer and returns:
 
-A score from 1 to 5
+- A score from **1 to 5**  
+- A **short one-line summary**  
+- One **improvement suggestion**
 
-A short one-line summary
+---
 
-One improvement suggestion
-
-
-📊 2. /rank-candidates
+### 📊 2. `/rank-candidates`
 Takes an array of answers and:
 
-Evaluates each one using the same LLM logic
+- Evaluates each one using the same LLM logic  
+- Sorts candidates from **highest → lowest score**  
+- Returns a clean JSON list  
 
-Sorts candidates from highest → lowest score
+---
 
-Returns a clean JSON list
+## ✨ Additional Highlights
 
+- Predictable, **structured JSON responses**  
+- Safe JSON parsing to prevent formatting issues  
+- Minimal and readable architecture  
+- Automatic API documentation via **Swagger UI** (`/docs`)
 
-✨ Additional
-Predictable, structured JSON responses
+---
 
-Safe JSON parsing to avoid model formatting issues
+## 🛠 Tech Stack & Why I Chose It
 
-Minimal + readable architecture
+### **FastAPI**
+I chose FastAPI because it is:
+- Extremely lightweight  
+- Fast and async-friendly  
+- Auto-generates API docs  
+- Perfect for small real-world backend services  
 
-Automatically documented via Swagger UI (/docs)
+### **OpenAI (gpt-4o-mini)**
+Used for evaluation because it:
+- Handles structured JSON instructions reliably  
+- Has low latency  
+- Integrates easily with the Python SDK  
 
-🛠️ Tech Stack & Why I Chose It
+### **Design Philosophy**
+- Keep it simple  
+- Avoid unnecessary complexity  
+- Focus on clarity and maintainability  
 
-FastAPI
-I picked FastAPI because it is:Extremely lightweight,Fast and async-friendly,Automatically generates live API docs
-Perfect for small real-world backend services
+---
 
-OpenAI (gpt-4o-mini) 
-Used as the evaluation engine because:It handles structured JSON instructions reliably,Low latency for quick scoring,Simple integration using the Python SDK
+## 📦 Setup Instructions
 
-Architecture Philosophy
-The app is intentionally simple:Entire logic in a single file for easy review,One evaluation function reused across endpoints,Minimal dependencies and clear flow
-Product-engineering mindset: no over-engineering
-
-📦 Setup Instructions
 Clone the repository:
+
 ```bash
 git clone https://github.com/JOYDALAL7/mini-ai-interview-screener
 cd mini-ai-interview-screener
